@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+.main-container
+{
+    padding-top: 50px;
+}
+.navbar
+{
+    background-color: #5d5df5;
+}
+.col1
+{
+    background-color: white;
+    color: black;
+    border-radius: 13px;
+    padding: 20px;
+    
+}
+.col2
+{
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 13px;
+    padding: 20px;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.app {
+    background-color: #f8f8fb;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .header {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .content {
+    display: flex;
+    flex: 1;
   }
-}
+  
+  .sidebar {
+    width: 6%;
+    background-color: white;
+  }
+  
+  .columns {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 5px;
+  }
+  .image-container {
+    float: left; /* Float the image to the left */
+  }
+  
+  .image {
+    width: 90%;
+    max-height: 50px;
+    object-fit: cover;
+    border-radius: 50%; /* Make the image circular */
+  }
+  
+  .text-container {
+    padding-top: 10px;
+    padding-left: 45px;
+    width: 75%; 
+  }
+  .text-container p {
+    line-height: 0.3; 
+  }
+  .image-text {
+    text-align: left;
+    font-size: 10px;
+  }
+  .text-container-post p{
+    margin-bottom: 0px;
+    line-height: 1.5;
+  }
+  .post{
+    font-size: 12px;
+  }
+  .post-sub-heading{
+    font-size: 10px;
+  }
+  /* Clear the float to prevent layout issues */
+  .content::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .icon
+  {
+    margin-top: 30px;
+    color: #dadbe7;
+  }
+  .icon:hover {
+    background-color: #00d2df; 
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+  }
+  .active_icon
+  {
+    background-color: #00d2df; 
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+  }
+  .group {
+    color: black;
+    background-color: white !important; /* Background color */
+    border: 1px solid#eeeef3 !important; /* Black border */
+    border-radius: 10px;
+    text-align: left;
+    padding: 7px 5px 7px 5px;
+  }
+  .arrow
+  {
+    padding-left: 40% !important;
+  }
+  .label-text
+  {
+    font-size: 11px;
+    color: black;
+    position: absolute;
+    margin-top: -9px;
+    margin-left: -40px;
+    background-color: white;
+  }
+  .p-tag
+  {
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 4px solid #03d1de;
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    margin-bottom: -20px;
+  }
+  .pro-member
+  {
+    background-color: #5d5df5;
+    color: white;
+    border-radius: 15px;
+    padding: 3px 12px 3px 12px;
+    margin-right: 2px;
+    margin-left: 5px;
+  }
+  .navbar-brand-heading{
+    color: white;
+    font-size:large
+  }
+  .nav-link-1{
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 13px;
+  }
+  .navbar-brand-heading{
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 600;
+  }
+  .navbar>.container{
+    padding: 10px;
+    margin-left: 0;
+  }
+  .form-control, .form-inline {
+    margin-right: 150px;
+    background-color: #4b4ac4 !important;
+    border: 1px solid #4b4ac4 !important;
+    border-radius: 10px;
+  }
+  .login-btn{
+    background-color: #00d2df;
+    border: 1px solid #00d2df;
+    border-radius: 5px;
+    width: 80px;
+    padding: 5px;
+    color: white;
+    margin-right: -100px;
+  }
+  .input-group-text
+  {
+    padding: 10px !important;
+    background-color: #4b4ac4 !important;
+    border: none !important;
+  }

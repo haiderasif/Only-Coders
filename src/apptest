@@ -1,0 +1,29 @@
+import React from 'react';
+import './App.css';
+import Header from './components/Header'
+import Sidebar from './components/Sidebar'
+import NewMembers from './components/new_members';
+import Section3 from './components/section3';
+import Card from './img/Screenshot 2023-10-02 at 12.06.26.png'
+
+function App() {
+  return (
+    <div className="app">
+      <header className="header">
+        <Header/>
+      </header>
+      <div className="content">
+        <div className="sidebar">
+          <Sidebar/>
+        </div>
+        <div className="columns">
+          <div className="column"><NewMembers/></div>
+          <div className="column">Column 2</div>
+          <div className="column"><Section3/></div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
